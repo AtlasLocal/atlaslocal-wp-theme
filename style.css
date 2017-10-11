@@ -1,0 +1,42 @@
+/*
+Theme Name: AtLo
+Theme URI: http://atlasloca.lcom
+Author: Dan Robert
+Author URI: http://dan.robert.blog
+Template: pique
+Description: WordPress theme the Atlas Local cowork space. A child theme of Pique.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: atlo
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/**
+ * Parent Theme Overrides
+ */
+.site {
+  background: none;
+  box-shadow: none;
+  max-width: 100%;
+}
+#masthead {
+  background: none;
+}
+
+.pique-panel-background {
+  opacity: 1;
+}
+
+#pique-hero .pique-panel-content .entry-content p:first-of-type {
+	font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  body:not(.no-background-fixed) .pique-panel-background {
+    background-attachment: scroll;
+  }
+}
